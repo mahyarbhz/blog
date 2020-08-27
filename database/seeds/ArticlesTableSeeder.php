@@ -13,6 +13,6 @@ class ArticlesTableSeeder extends Seeder
     public function run()
     {
         Article::truncate();
-        factory(Article::class,5)->create();
+        factory(Article::class,50)->create();
     }
 }

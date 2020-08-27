@@ -14,5 +14,13 @@
     <br>
     <br>
     <br>
-    <input type="text">
+    Comments :
+    <br>
+    <br>
+    @foreach($article->comment as $comment)
+        <h3>{{ $comment->user->name }}</h3>
+        <p>{{ $comment->comment }}</p>
+        <br>
+        <hr>
+    @endforeach
 @endsection

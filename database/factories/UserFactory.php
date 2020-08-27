@@ -4,6 +4,7 @@
 
 use App\User;
 use App\Article;
+use App\Comment;
 use Faker\Generator as Faker;
 use Illuminate\Support\Str;
 
@@ -37,5 +38,14 @@ $factory->define(Article::class, function (Faker $faker) {
         'image' => $faker->imageUrl($width = 360, $height = 260),
         'created_at' => $faker->dateTime($max = 'now', $timezone = date_default_timezone_get()),
         'cat' => $faker->name,
+    ];
+});
+
+$factory->define(Comment::class, function (Faker $faker) {
+    return [
+        'user_id' => $faker->randomDigitNotNull,
+        'article_id' => $faker->randomDigitNotNull,
+        'comment' => $faker->text($maxNbChars = 50),
+        'created_at' => $faker->dateTime($max = 'now', $timezone = date_default_timezone_get()),
     ];
 });

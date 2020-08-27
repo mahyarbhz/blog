@@ -10,7 +10,7 @@ I have used [Verta](https://hekmatinasser.github.io/verta/) package for *dates*
 
 <br>
 
-## To run project on you system :
+## To run project on your system :
 
 1. you can paste it in localhost and open `public/index.php` (not recommended) <br>
 2. you can use this cmd in project's terminal `php artisan serve` (you'd better have composer installed on your device) and go to this link in your browser: `127.0.0.1:8000/` <br>

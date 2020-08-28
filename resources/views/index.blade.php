@@ -21,7 +21,7 @@
                             <p class="card-text">
                                 {{ $article->demo }}
                             </p>
-                            <a href="/detail/{{ $article->id }}" class="btn btn-primary">Link</a>
+                            <a href="/detail/{{ $article->id }}" class="btn btn-primary">Aticle</a>
                         </div>
                     </div>
                 </div>

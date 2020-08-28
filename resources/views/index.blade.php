@@ -6,7 +6,7 @@
                 <!-- Cards START -->
                 @foreach($articles as $article)
                 <div class="col-lg-4">
-                    <div class="card" style="width: 18rem" >
+                    <div class="card" style="{{--width: 18rem--}}" >
                         <img src="{{ $article->image }}" alt="" class="card-img-top">
                         <div class="card-body">
                             <h4 class="card-title">
@@ -21,7 +21,7 @@
                             <p class="card-text">
                                 {{ $article->demo }}
                             </p>
-                            <a href="/detail/{{ $article->id }}" class="btn btn-primary">Link</a>
+                            <a href="/detail/{{ $article->id }}" class="btn btn-primary">Aticle</a>
                         </div>
                     </div>
                 </div>

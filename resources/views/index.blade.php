@@ -2,11 +2,11 @@
 @section('content')
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-12">
-                <div class="card-group">
-                    <!-- Cards START -->
-                    @foreach($articles as $article)
-                    <div class="card" style="width: 18rem">
+            <div class="card-group">
+                <!-- Cards START -->
+                @foreach($articles as $article)
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem" >
                         <img src="{{ $article->image }}" alt="" class="card-img-top">
                         <div class="card-body">
                             <h4 class="card-title">
@@ -24,13 +24,14 @@
                             <a href="/detail/{{ $article->id }}" class="btn btn-primary">Link</a>
                         </div>
                     </div>
-                    @endforeach
-                    <!-- Cards End -->
-
                 </div>
+                @endforeach
+                <!-- Cards End -->
             </div>
         </div>
         <br>
-        {{ $articles->links() }}
+        <div class="row justify-content-center">
+            {{ $articles->links() }}
+        </div>
     </div>
 @endsection

@@ -19,7 +19,7 @@ class CreateArticlesTable extends Migration
             $table->string('title');
             $table->string('demo');
             $table->text('text');
-            $table->string('image')->default('http://lorempixel.com/360/260');
+            $table->string('image')->default('https://lorempixel.com/360/260');
             $table->string('cat')->default('طراحی سایت');
             $table->timestamps();
         });

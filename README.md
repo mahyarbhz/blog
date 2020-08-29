@@ -16,6 +16,8 @@ I have used [Verta](https://hekmatinasser.github.io/verta/) package for *dates*
 2. you can use this cmd in project's terminal `php artisan serve` (you'd better have composer installed on your device) and go to this link in your browser: `127.0.0.1:8000/` <br>
  For any ways, you'd better connect to internet because of article photos (with [lorem Pixel](https://lorempixel.com))
  You have to make a database in your localhost (for both ways to run) that names `blog`.
+ For making tables you have to use this cmd : `php artisan migrate`
+ Then if you want to have fake datas in project, You can use this cmd : `php artisan db:seed`
 
 ## v1.0 :
 

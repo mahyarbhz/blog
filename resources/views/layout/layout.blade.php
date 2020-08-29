@@ -10,13 +10,13 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
 
 <!--  Nav bar START -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-    <a class="navbar-brand" href="">MahyarNV</a>
+    <a class="navbar-brand" href="{{ route('index') }}">MahyarNV</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -63,6 +63,6 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="/js/app.js"></script>
+<script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

@@ -26,9 +26,13 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 //Articles
-Route::get('/add', 'ArticleController@add');
+Route::get('/add', 'ArticleController@add')->middleware('auth');
 Route::post('/store', 'ArticleController@store');
 Route::get('/detail/{article}', 'ArticleController@detail');
+
+
+Route::get('/upload', 'ArticleController@upload');
+Route::post('/uploader', 'ArticleController@uploader');
 
 
 Route::get('/test', function() {
@@ -36,3 +40,5 @@ Route::get('/test', function() {
     flash('Matn e flash');
     return view('test');
 });
+
+Route::resource('pages', 'PageController');

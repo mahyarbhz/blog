@@ -29,3 +29,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/add', 'ArticleController@add');
 Route::post('/store', 'ArticleController@store');
 Route::get('/detail/{article}', 'ArticleController@detail');
+
+
+Route::get('/test', function() {
+//    return redirect();
+    flash('Matn e flash');
+    return view('test');
+});

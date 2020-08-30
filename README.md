@@ -27,7 +27,7 @@ Can see articles, their comments, Register-Login and logout. <br>
 This version has no exciting appearance. <br>
 ~~You can't choose your article image yet. <br>~~
 
-## v0.9 :
+## v1.0 :
 
 <br>
 

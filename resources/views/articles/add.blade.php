@@ -1,34 +1,30 @@
 @extends('layout.layout')
 @section('content')
-{{--@if($errors->any())--}}
-{{--    <div class="alert alert-danger" role="alert">--}}
-{{--        <ul>--}}
-{{--            @foreach($errors->all() as $error)--}}
-{{--                <li>{{ $error }}</li>--}}
-{{--            @endforeach--}}
-{{--        </ul>--}}
-{{--    </div>--}}
-{{--@endif--}}
+
 <!-- Form START -->
-    <form method="post" action="/store">
+    <form method="post" action="/store" enctype="multipart/form-data">
         {{ csrf_field() }}
-        <div class="form-group">
+        <div class="form-group">        {{-- Title Input --}}
             <input type="text" class="form-control" placeholder="Title" name="title">
-            @if($errors->has('title'))
-                <p class="alert alert-danger">{{$errors->first('title')}}</p>
-            @endif
+            @if($errors->has('title'))  {{-- Error Warner --}}
+                <p class="alert alert-danger">{{$errors->first('title')}}</p> {{-- Error Warner --}}
+            @endif                      {{-- Error Warner --}}
         </div>
-        <div class="form-group">
+        <div class="form-group">        {{-- Demo Input --}}
             <input type="text" class="form-control" placeholder="Demo" name="demo">
-            @if($errors->has('demo'))
-                <p class="alert alert-danger">{{$errors->first('demo')}}</p>
-            @endif
+            @if($errors->has('demo'))   {{-- Error Warner --}}
+                <p class="alert alert-danger">{{$errors->first('demo')}}</p> {{-- Error Warner --}}
+            @endif                      {{-- Error Warner --}}
         </div>
-        <div class="form-group">
+        <div class="form-group">        {{-- Text Input --}}
             <textarea type="text" class="form-control" placeholder="Text" name="text" rows="5"></textarea>
-            @if($errors->has('text'))
-                <p class="alert alert-danger">{{$errors->first('text')}}</p>
-            @endif
+            @if($errors->has('text')) {{-- Error Warner --}}
+                <p class="alert alert-danger">{{$errors->first('text')}}</p> {{-- Error Warner --}}
+            @endif                      {{-- Error Warner --}}
+        </div>
+        <div class="form-group"> {{-- File Input --}}
+            <label for="inputFile1">Photo</label>
+            <input type="file" id="inputFile1" name="pic">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>

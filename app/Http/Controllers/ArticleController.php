@@ -44,14 +44,5 @@ class ArticleController extends Controller
     public function detail(Article $article) {
         return view('articles.detail', compact('article'));
     }
-    public function upload(Article $article) {
-        return view('articles.uploader');
-    }
-    public function uploader(Request $request) {
-        $file = $request->file('pic');
-        $filename = time()."-".$file->getClientOriginalName();
-        $path = public_path('/img/Uploads');
-        $file->move($path,$filename);
-    }
 
 }

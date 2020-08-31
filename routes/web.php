@@ -29,9 +29,9 @@ Route::get('/add', 'ArticleController@add')->middleware('auth');
 Route::post('/store', 'ArticleController@store');
 Route::get('/detail/{article}', 'ArticleController@detail');
 
+// Comment
+Route::get('/comment/{article}', 'CommentController@store');
 
-Route::get('/upload', 'ArticleController@upload');
-Route::post('/uploader', 'ArticleController@uploader');
 
 
 Route::get('/test', function() {

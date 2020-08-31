@@ -16,6 +16,15 @@
     <br>
     Comments :
     <br>
+    <form action="/comment/{{ $article->id }}">
+        {{ csrf_field() }}
+        <input type="text" name="comment">
+        @if($errors->has('comment'))  {{-- Error Warner --}}
+        <p class="alert alert-danger">{{$errors->first('comment')}}</p> {{-- Error Warner --}}
+        @endif
+        <br>
+        <input type="submit" value="ثبت نظر">
+    </form>
     <br>
     @foreach($article->comment as $comment)
         <h3>{{ $comment->user->name }}</h3>

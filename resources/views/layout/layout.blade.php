@@ -22,18 +22,6 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
-            <!--
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown link
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
-            -->
             @if(Auth::check())
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('logout') }}">Logout</a>
@@ -55,7 +43,7 @@
 <!--  Nav bar END -->
 
 <!--  Body START -->
-<div class="content" style="padding: 5px">
+<div class="content" style="padding: 20px">
     @yield('content')
 </div>
 <!--  Body END -->

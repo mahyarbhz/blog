@@ -41,3 +41,5 @@ Route::get('/test', function() {
 });
 
 Route::resource('pages', 'PageController');
+
+Route::resource('categories', 'CategoryController');

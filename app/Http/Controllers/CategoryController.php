@@ -91,4 +91,16 @@ class CategoryController extends Controller
     {
         //
     }
+
+    /**
+     * Display a listing of Articles in the index page of blog.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function list(Category $category)
+    {
+        $categories = Category::all();
+        $articles = $category->articles()->paginate(6);
+        return view('list', compact('articles', 'categories'));
+    }
 }

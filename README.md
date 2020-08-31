@@ -33,8 +33,6 @@ This version has no exciting appearance. <br>
 
 <br>
 
-Can see articles, their comments, Register-Login and logout. <br>
-This version has no exciting appearance. <br>
-User that upload article couldn't define. <br>
-You can choose your article image yet. <br>
+User that upload article now define. <br>
+You can choose your article image now. <br>
 You can push comments. <br>

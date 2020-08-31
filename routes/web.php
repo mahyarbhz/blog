@@ -24,7 +24,6 @@ Route::get('/logout', 'Auth\LoginController@logout');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
 //Articles
 Route::get('/add', 'ArticleController@add')->middleware('auth');
 Route::post('/store', 'ArticleController@store');

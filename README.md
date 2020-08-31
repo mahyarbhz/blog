@@ -25,8 +25,9 @@ I have used [Verta](https://hekmatinasser.github.io/verta/) package for *dates*
 
 Can see articles, their comments, Register-Login and logout. <br>
 This version has no exciting appearance. <br>
-~~User that upload article couldn't define. <br>~~
+~~User that upload article can't define. <br>~~
 ~~You can't choose your article image yet. <br>~~
+~~You can't push comments. <br>~~
 
 ## v1.0 :
 
@@ -36,3 +37,4 @@ Can see articles, their comments, Register-Login and logout. <br>
 This version has no exciting appearance. <br>
 User that upload article couldn't define. <br>
 You can choose your article image yet. <br>
+You can push comments. <br>

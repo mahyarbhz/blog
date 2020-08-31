@@ -10,6 +10,16 @@
                 <p class="alert alert-danger">{{$errors->first('title')}}</p> {{-- Error Warner --}}
             @endif                      {{-- Error Warner --}}
         </div>
+        <div class="form-group">        {{-- Title Input --}}
+            <select class="form-control" multiple name="category[]">
+                @foreach($categories as $category)
+                <option value="{{ $category->id }}">{{ $category->title }}</option>
+                @endforeach
+            </select>
+            @if($errors->has('title'))  {{-- Error Warner --}}
+                <p class="alert alert-danger">{{$errors->first('title')}}</p> {{-- Error Warner --}}
+            @endif                      {{-- Error Warner --}}
+        </div>
         <div class="form-group">        {{-- Demo Input --}}
             <input type="text" class="form-control" placeholder="Demo" name="demo">
             @if($errors->has('demo'))   {{-- Error Warner --}}

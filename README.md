@@ -36,3 +36,7 @@ This version has no exciting appearance. <br>
 User that upload article now define. <br>
 You can choose your article image now. <br>
 You can push comments. <br>
+
+## Newest Version:
+
+<a href="https://github.com/MahyarNV/cautious-blog">My newest and better weblog here</a>
